@@ -17,6 +17,9 @@ There is a separate Golang output plugin provided by [Grafana](https://grafana.c
 | `tls` | Use TLS authentication. | `off` |
 | `http_user` | Set HTTP basic authentication user name. | _none_ |
 | `http_passwd` | Set HTTP basic authentication password. | _none_ |
+| `client_key` | Set client key authentication key value for mTLS connections. | _none_ |
+| `client_cert` | Set client certificate authentication certificate value for mTLS connections. | _none_ |
+| `ca_cert` | Set client CA certificate authentication certificate value for mTLS connections. | _none_ |
 | `bearer_token` | Set bearer token authentication token value. | _none_ |
 | `header` | Add additional arbitrary HTTP header key/value pair. Multiple headers can be set. | _none_ |
 | `tenant_id` | Tenant ID used by default to push logs to Loki. If omitted or empty it assumes Loki is running in single-tenant mode and no `X-Scope-OrgID` header is sent. | _none_ |
